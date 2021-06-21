@@ -49,13 +49,15 @@ class DicePage extends StatefulWidget {
 
 class _DicePageState extends State<DicePage> {
   int leftDice=1;
-  var _diceface;
-  var _diceface2;
+  var _diceface=1;
+  var _diceface2=1;
 
   void changeDice(){
-    _diceface = Random().nextInt(6) +1 ;
-    _diceface2 = Random().nextInt(6) +1 ;
+    _diceface = Random().nextInt(5) +1 ;
+    _diceface2 = Random().nextInt(5) +1 ;
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +72,7 @@ class _DicePageState extends State<DicePage> {
               print("ON PRESSED");
             },
             child: Image(
-              image: AssetImage('images/dice$_diceface.png'),
+              image: AssetImage('images/ball$_diceface.png'),
             ),
           )),
           Expanded(child: TextButton(
@@ -80,7 +82,7 @@ class _DicePageState extends State<DicePage> {
               });
             },
             child: Image(
-              image: AssetImage('images/dice$_diceface2.png'),
+              image: AssetImage('images/ball$_diceface2.png'),
             ),
           ))
         ],
