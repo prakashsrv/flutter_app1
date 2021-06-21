@@ -7,9 +7,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-            title: Center(child: Text("I AM RICH")), backgroundColor: Colors.blueGrey),
-        body: Center(child: Image(image: AssetImage('images/android_hilt.png'))),
+        backgroundColor: Colors.blue,
+           body: SafeArea(
+             child: Container(
+               color: Colors.green,
+               child: Text("HELLO"),
+             ),
+           ),
       ),
     );
   }
