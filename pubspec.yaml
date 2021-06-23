@@ -28,9 +28,10 @@ flutter:
     - images/
 
   fonts:
-    - family: Pacifico
+    - family: Spartan MB
       fonts:
-        - asset: fonts/Pacifico-Regular.ttf
+      - asset: fonts/SpartanMB-Black.otf
+        weight: 900
 
 
 
